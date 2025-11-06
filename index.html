@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="STIVO DEVX WhatsApp Unban Tool – Recover your banned WhatsApp account safely and fast." />
+  <meta name="theme-color" content="#2a1520" />
+  <title>STIVO DEVX WHATSAPP UNBAN WEB</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <audio id="joinSound" src="data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZ" preload="auto"></audio>
+
+  <div id="logo" aria-hidden="true">STIVO DEVX</div>
+
+  <main id="app">
+    <!-- PAGE 1: Intro -->
+    <section id="page1" class="page active">
+      <h1>STIVO DEVX WHATSAPP UNBAN WEB</h1>
+      <div class="boxes">
+        <article class="box"><strong>safety</strong><br>Honest appeal=success.</article>
+        <article class="box"><strong>Purpose</strong><br>Recover banned WhatsApp safely.</article>
+        <article class="box"><strong>How It Works</strong><br>Appeal → Restore in 24–48 hrs (depends on support).</article>
+      </div>
+      <button onclick="next(2)">PROCEED TO UNBAN PROCESS</button>
+    </section>
+
+    <!-- PAGE 2: Join Channels -->
+    <section id="page2" class="page">
+      <h1>Join Our Channels</h1>
+      <p>You <strong>must join all</strong> to continue.</p>
+
+      <div class="info">
+        Before you can unban your WhatsApp number you must make sure you have joined our channels
+      </div>
+
+      <div class="channels">
+        <a href="https://whatsapp.com/channel/0029Vb6nKuV8vd1M1iBlWe2l" target="_blank" class="btn channel-btn" data-id="wa_channel">📲 WHATSAPP CHANNEL</a>
+
+        <a href="https://chat.whatsapp.com/C9hAgefjO0f5cxbQXO05Sd?mode=wwt" target="_blank" class="btn channel-btn" data-id="wa_group">💬 WHATSAPP GROUP</a>
+
+        <a href="https://t.me/teamhackerstivo" target="_blank" class="btn channel-btn" data-id="tg_channel">📢 TELEGRAM CHANNEL</a>
+
+        <a href="https://whatsapp.com/channel/0029Vb6d9R24Y9lwlPfpQ10A" target="_blank" class="btn channel-btn" data-id="giveaway">🎁 GIVEAWAY CHANNEL (WhatsApp)</a>
+
+
+        <a href="https://youtube.com/@techstivo2?si=_lZRdHXLr3OImW-w" target="_blank" class="btn channel-btn" data-id="yt">📺 YOUTUBE CHANNEL</a>
+
+        <a href="https://whatsapp.com/channel/0029Vb796lp9sBIIgM12Or06" target="_blank" class="btn channel-btn" data-id="script_wa">🔗 CHANNEL WHATSAPP SCRIPT</a>
+      </div>
+      <div class="progress">Joined: <span id="count">0</span>/7</div>
+      <p class="warning" id="warn">You must join <strong>ALL</strong> channels!</p>
+      <button id="joinAllBtn" onclick="verifyChannels()">I HAVE JOINED ALL</button>
+    </section>
+
+    <!-- PAGE 3: Enter Number -->
+    <section id="page3" class="page">
+      <h1>Enter WhatsApp Number</h1>
+      <input type="text" id="number" placeholder="+237678050300" />
+      <button onclick="saveNumber()">NEXT</button>
+    </section>
+
+    <!-- PAGE 4: Confirm + FINAL UNBAN BUTTON -->
+    <section id="page4" class="page">
+      <h1>Confirm & Unban</h1>
+      <p id="confirmNum" style="font-size:1.2rem; margin:1rem 0;"></p>
+      <button id="unbanBtn" style="background:#2aa36f; color:white; font-size:1.1rem; padding:1rem 2rem;">
+        UNBAN MY NUMBER NOW
+      </button>
+      <p style="margin-top:1rem; color:#90ee90; font-weight:bold; display:none;" id="sentMsg">
+        Email opened! Just tap "Send" in your mail app.
+      </p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
